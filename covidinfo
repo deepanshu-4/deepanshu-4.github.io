@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+ <script>
+  var f=0;
+ function fun(){
+    var a=document.getElementById('inp').value;
+
+
+        /*if(f==1){
+              $("#tba tr").detach();
+              return;
+               }*/
+    $.get("https://api.covid19india.org/data.json",
+        function(data){
+
+              var tbval=document.getElementById('tba');
+             
+
+              for(var i=1;i<(data['statewise'].length);i++){
+                          
+                
+                if(data['statewise'][i-1]['state']== a){
+                  // $("#tb tr").detach();
+                  var tc = $("#tba tr").length;
+                  if(tc>1){
+                  document.getElementById("tba").deleteRow(1);
+                  return;
+                  }
+                  var x=tbval.insertRow();
+                   $("#tb").addClass("tdk");
+                 
+                  tba.rows[1].style.background="grey";
+
+
+                  x.insertCell(0);
+                  tba.rows[1].cells[0].innerHTML=data['statewise'][i-1]['state'];
+                  
+                  
+                  x.insertCell(1);
+                   tba.rows[1].cells[1].innerHTML=data['statewise'][i-1]['confirmed'];
+                   
+                   x.insertCell(2);
+                  tba.rows[1].cells[2].innerHTML=data['statewise'][i-1]['deaths'];
+
+                  x.insertCell(3);
+                  tba.rows[1].cells[3].innerHTML=data['statewise'][i-1]['recovered']; 
+                  x.insertCell(4); 
+                  tba.rows[1].cells[4].innerHTML=data['statewise'][i-1]['active'];
+                  x.insertCell(5);
+                  tba.rows[1].cells[5].innerHTML=data['statewise'][i-1]['lastupdatedtime'];
+                  $("#tba").removeClass("tdk");
+                  
+                   //$("#tba tr").detach();
+                  break;
+              }
+              else{
+                   //$("#tba tr").detach();
+                   $("#tba").addClass("tdk");
+                   $("#tb").removeClass("tdk");
+                    f=0;
+              }
+
+            }
+        } )
+   
+    
+
+  }
+
+
+
+ </script>
+
+
+<style>
+.tdk{
+display: none;
+
+}
+td{
+	color:yellow;
+}
+td:hover{
+color:red;
+font-size:250%;
+}
+input{
+
+    border: 3px solid black;
+    width:100%;
+}
+</style>
+
+</head>
+
+<body onload="fetch()">
+<div class="container-fluid">
+	<div class="mb-3">
+	<h1 class="text-center text-uppercase">Covid 19 Updates of Indian States</h1>
+<marquee><img class="img-responsive" src="https://cdn.mos.cms.futurecdn.net/JtVH5Khvihib7dBDFY9ZDR-1200-80.jpg" width="250" height="140">
+</marquee></div>
+
+  <div class="mb-5 mt-4 text-center">
+ <strong class="mr-3">Search:-</strong><input type="text" placeholder="enter state name" id="inp" onkeypress="fun();">
+</div>
+	<div class="table-responsive{-sm|-md|-lg|-xl}.">
+	<table class=" table table-bordered table-stripped text-center tdk " id="tba"> 
+      <tr>
+       <th>State</th>
+       <th>Total</th>
+       <th>TotalDeath</th>
+       <th>Total Recovered</th>
+       
+       <th>Active</th>
+       <th>Last updated time</th>
+     </tr>
+  </table>
+
+  <table class=" table table-bordered table-stripped text-center bodywrapcenter" id="tb">	
+      <tr>
+       <th>State</th>
+       <th>Total</th>
+       <th>TotalDeath</th>
+       <th>Total Recovered</th>
+       
+       <th>Active</th>
+       <th>Last updated time</th>
+     </tr>
+	</table>
+	<script>
+
+
+  function fetch(){
+  	$.get("https://api.covid19india.org/data.json",
+  			function(data){
+              var tbval=document.getElementById('tb');
+              for(var i=1;i<(data['statewise'].length);i++){
+                  var x=tbval.insertRow();
+                  tb.rows[i].style.background="grey";
+                  x.insertCell(0);
+                  tb.rows[i].cells[0].innerHTML=data['statewise'][i-1]['state'];
+                  
+                  
+                  x.insertCell(1);
+                   tb.rows[i].cells[1].innerHTML=data['statewise'][i-1]['confirmed'];
+                   
+                   x.insertCell(2);
+                  tb.rows[i].cells[2].innerHTML=data['statewise'][i-1]['deaths'];
+
+                  x.insertCell(3);
+                  tb.rows[i].cells[3].innerHTML=data['statewise'][i-1]['recovered']; 
+                  x.insertCell(4); 
+                  tb.rows[i].cells[4].innerHTML=data['statewise'][i-1]['active'];
+                  x.insertCell(5);
+                  tb.rows[i].cells[5].innerHTML=data['statewise'][i-1]['lastupdatedtime'];
+              }
+
+  			}
+
+
+  		)
+
+ 
+  }
+
+	</script>
+</body>
+</html>
