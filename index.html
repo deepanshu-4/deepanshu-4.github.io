@@ -1,0 +1,119 @@
+<html>
+<head>
+  <title>website</title>
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script >
+    $(document).ready(function(){
+    $(".d2").html("<center><h1>Welcome <br>Click Here to see Radha krishan images</h1>");
+    $("#d2").mousedown(function(){
+    $('.d2').text(""); 
+  
+
+     $('.d1').fadeOut(1500); 
+    $('.d2').fadeOut(1500);
+   
+    setTimeout(function(){
+   $('.d1').fadeIn(4000);
+       $("#d2").removeClass("d2");
+    $("#d1").removeClass("d1");
+       $("#d2").addClass("d21");
+    $("#d1").addClass("d11");
+     $("img").removeClass("i");
+     $("body").addClass("bd");
+     $("img").addClass("im");
+
+    $('#d2').fadeIn(2210);
+   }, 2000);
+    });
+$(".h1").on({
+  mouseenter:function(){
+$(".h1").css({"color": "red", "font-size": "300%"});}
+,
+mouseleave:function(){
+  $(".h1").css({"color": "orange", "font-size": "200%"});
+}
+    });
+});
+
+    </script> 
+<style>
+	.bd{
+background-color:#DAA520;
+}
+  .d11{
+      
+    width:100%;
+    height:100%;
+
+  
+ /*background-image:linear-gradient(to right,red,yellow);
+/* border:2px solid red;
+*/
+}
+
+.d1{
+      
+    width:100%;
+    height:100%;
+
+  background-color:black;
+ background-image:linear-gradient(to right,red,orange);
+/* border:2px solid red;
+*/
+}
+.d2{
+    text-align:center;  
+    width:50%;
+    height:60%;
+    margin:auto;
+    margin: 7% 72% 4% 26%;
+  background-color:blue;
+
+  border-radius: 29px;
+}
+.d1 .h1{
+  display:none;
+}
+.d1 .h2{
+  display:none;
+}
+.d11 .h1,.h2{
+  display:inline;
+}
+.im{
+text-align:center;
+  width:60%;
+  margin-top:5px;
+ background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.i{
+display:none;
+}
+</style>
+</head>
+<body>
+ 
+<div id="d1" class="d1">
+  <h1 class="h1">Jai Shree Krishna</h1>
+  <h2 class="h1">Radhe Radhe</h2> <hr>
+  <center>
+     <img  class="i" src="https://deepanshu-4.github.io/dk.github.io/img.jpg" alt="Radhe">
+    <img  class="i" src="https://www.itl.cat/pics/b/19/190737_wallpaper-hd-of-lord-krishna.jpg" alt="Radhe">
+     <img  class="i" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRDkgD4nRqOY0WbrVUPV0iegp_ptqot73oJOxcRrYrjOjYtACPi&usqp=CAU" alt="Radhe">
+     <img  class="i" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSmo8O6yVtJfBlr7s_Nf8v72ZEujZvpL478YPGPYmWvTZsgliuw&usqp=CAU" alt="Radhe">
+     <img  class="i" src="https://i.pinimg.com/originals/43/fd/95/43fd9576ce5da2d2f207bcc902b66c5b.jpg" alt="Radhe">
+     <img  class="i" src="https://lh3.googleusercontent.com/proxy/1ldTIzvhBC-D3YDSOPcvjszBiSddcWRfOCmzZmJv079qBxKvUWvW7zrP6JD9nbjk7ehI7IyrEohL07jZGVQSFMyQvV623gCugV-NR3cZk8rcqkB4lyOWQHGLrITYakytASSES-oP" alt="Radhe">
+     <img  class="i" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTJqU3MDfsiEp81U-wnLqlpNP6fnKEdA0UbQRZ7yI37s9YuLD4l&usqp=CAU" alt="Radhe">
+     <img  class="i" src="https://sites.google.com/site/babasabpatillordshrikrishna/_/rsrc/1379518512688/jai-shree-radha-krishna/radhakrishna8.jpg.1379518512412.jpg" alt="Radhe">
+  <div  id="d2" class="d2">
+
+  </center>
+  </div> 
+</div>
+</body>
+</html>
