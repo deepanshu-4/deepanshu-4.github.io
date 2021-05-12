@@ -11,7 +11,7 @@ html {
 .nav{
 	background-color: white;
 	margin:auto;
-	height: 8rem;
+	height: 16rem;
 	box-shadow: 5px 10px 80px lightgrey;
 	display: block;
 }
@@ -58,7 +58,7 @@ h1{
 	margin:0;
 	text-shadow: 0.2px 2px 0.7px Black;
 	letter-spacing: 0.02rem;
-	font-size: 1.7rem;
+	font-size: 2.7rem;
 }
 
 .im{
