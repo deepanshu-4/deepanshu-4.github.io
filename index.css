@@ -199,6 +199,10 @@ footer{
   object-fit: cover;
   object-position: center right;	
 }
+
+.lar{
+	display: block;
+}
 @media only screen and (max-width: 800px) {
 
 html {
@@ -222,7 +226,7 @@ html {
   object-position: center right;	
 }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px and max-width:1000px) {
 
 html {
 	font-size: 100%;
