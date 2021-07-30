@@ -1,0 +1,120 @@
+*{
+	margin:0.3rem;
+	padding:0;
+	box-sizing: border-box; 
+}
+body{
+	background: ghostwhite;
+	/*background: cadetblue;*/
+	/*background: azure;*/
+}
+.flex-container {
+  display: flex;
+ 
+  flex-wrap: wrap;
+}
+
+.flex-container > .x {
+
+  margin: auto;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16pt;
+}
+
+
+.x:nth-child(1) {
+  background-color: cornsilk;
+  box-shadow: 2px 2px 6px grey;
+}
+.x:nth-child(2) {
+  background-color: lightgrey;
+  box-shadow: 3px 1px 8px 2px;
+}
+
+.x:nth-child(2):hover {
+
+  box-shadow: 8px 6px  9px 3px;
+  border-radius: 1%;
+}
+#h1{
+ word-wrap: break-word;
+ line-height: 2rem;
+ letter-spacing: 0.05rem;
+ word-spacing: 0.10rem;
+ font-size: 10pt;
+}
+
+img{
+	object-fit: cover;
+	border-radius: 100%
+}
+
+button{
+	color: purple;
+	width:20rem;
+	height:3rem;
+	font-size:1rem;
+	font-weight: bold;
+	border-radius: 10%;
+	background:  aqua; 
+}
+button:hover{
+	cursor:pointer;
+}
+
+.edu
+{
+	font-size: 14pt;
+	background: beige;
+	height:50pt;
+    line-height: 50pt;
+  text-align: center;
+     border: 1px dashed purple;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+ width: -webkit-fill-available;
+}
+
+td, th {
+  border: 5pt solid #dddddd;
+  text-align: left;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+
+
+.typewriter h3 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0em; /* Adjust as needed */
+  animation: 
+    typing 6.5s steps(30, end);
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+ul{
+  text-align: center;
+  list-style-position: inside;
+}
+li{
+  font-size: 14pt;
+  list-style: inside;
+  font-weight: bold: 
+}
+
+img:hover{
+
+  box-shadow: 2px 2px 20px 5px gold;
+}
