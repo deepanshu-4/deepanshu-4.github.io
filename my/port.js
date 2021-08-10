@@ -152,9 +152,11 @@ function call(val){
 		  	
 		  	`;
 		document.querySelector('#pro').style.display = 'block';
-		document.querySelector("#h1").innerHTML="Projects";
+		document.querySelector("#h1").innerHTML="<h1>Projects</h1>";
 		document.querySelector("#ml").addEventListener("click",()=>scall('ml'));
         document.querySelector("#web").addEventListener("click",()=>scall('web'));
+        document.querySelector("#python").addEventListener("click",()=>scall('python'));
+        document.querySelector("#chrome").addEventListener("click",()=>scall('chrome'));
 	    console.log("p");
 
 	}
@@ -168,12 +170,296 @@ function scall(val){
 
 	if(val==="ml"){
 		console.log("a");
-		document.querySelector("#h2").innerHTML="ML";
+		// document.querySelector("#h2").innerHTML="ML";
+		document.querySelector('#chrome').style.backgroundColor = 'lightgrey';
+		document.querySelector('#web').style.backgroundColor = 'lightgrey';
+		document.querySelector('#ml').style.backgroundColor = 'blue';
+		document.querySelector('#python').style.backgroundColor = 'lightgrey';
+		document.querySelector('#inproject').innerHTML=`<br><div class="inpro">
+
+         
+
+		<div class="flex-container">
+				<div  style="flex-grow: 1"><h4>Python , Machinelearning, Data Science </h4></div>
+	  			
+		</div> 
+		</div>
+		
+        <br><div class="inpro">
+		<div class="flexcontainer">
+			<div  style="flex-grow: 1"><h1> Loan Prediction</h1>
+  			</div>
+  			   <br>
+  			<div  style="flex-grow: 8;  word-wrap: break-word;">
+	  			  <ol style="color:black;">
+	  			<li>Using Machine learning Algorithms make a classifier that can find whetheter loan should be given or not
+	  		    </li>
+	  		 
+	  		  
+	  		    	<li>Language used :- Python</li>
+	  		    	<li>Library used :-  Numpy,Scipy,Scikit-learn</li>
+	  		    	<li><a href="#">Link for project</a></li>
+	  		    <ol>
+  			</div>
+		</div> 
+
+
+		</div>
+
+		<br>
+		<div class="inpro">
+			<div>
+				<div  style="flex-grow: 1"><h1>Disease Prediction Based on Symptom </h1></div>
+					<br>
+		  			<div  style="flex-grow: 8">
+		  			<ol style="color:black;">
+		  			<li>
+		  			 Build a ml model using classification Algorithms that classify the Disease and predict disease based on symptom 		   
+		  		   	</li>
+		  		   
+		  		   	
+		  		    <li><a href="#"> Link for project</a></li>
+		  		    </ol>
+  				</div>
+			</div> 
+		</div>		`;
+
 
 	}
 	else if(val=='web'){
 		console.log("e");
-		document.querySelector("#h2").innerHTML="Web";
+		document.querySelector('#ml').style.backgroundColor = 'lightgrey';
+		document.querySelector('#web').style.backgroundColor = 'blue';
+		// document.querySelector("#h2").innerHTML="Web";
+		document.querySelector('#python').style.backgroundColor = 'lightgrey';
+		document.querySelector('#chrome').style.backgroundColor = 'lightgrey';
+		document.querySelector('#inproject').innerHTML=`
+
+		
+
+		<br><div class="inpro">
+        
+		<div class="flex-container">
+				<div  style="flex-grow: 1"><h4> Using Django HTML  CSS JS </h4></div>
+	  			
+		</div> 
+		</div>
+
+
+		<br>
+		<div class="inpro">
+			<div class="flexcontainer">
+				<div  style="flex-grow: 1"><h1> DigiStorage</h1></div>
+					<br>
+		  			<div  style="flex-grow: 8">
+		  			<ol style="color:black;">
+		  			<li>
+		  			 Build a website to store images,files , music , youtube , playlist on online storage using cloudinary	  		   
+		  		   	</li>
+		  		    <li>
+		  			  Authentication of user by sending otp through email using sendgrid api	  		   
+		  		   	</li>
+		  		   	<li>
+		  			 Provide a feature to share image in public network 	  		   
+		  		   	</li>
+		  		   <li><a href="http://digistorage.herokuapp.com/data" target=_blank> http://digistorage.herokuapp.com/data</a></li>
+		  		    </ol>
+  				</div>
+			</div> 
+		</div>
+
+		<br>
+		<div class="inpro">
+			<div>
+				<div  style="flex-grow: 1"><h1>Codechef Profilematcher </h1></div>
+					<br>
+		  			<div  style="flex-grow: 8">
+		  			<ol style="color:black;">
+		  			<li>
+		  			 Build a website to that fetch the details of two codechef profile using username and make a comparison report	  		   
+		  		   	</li>
+		  		    <li>
+		  			  Using webscrapping to fetch the data	  		   
+		  		   	</li>
+		  		   	
+		  		    <li><a href="https://mcodechefp.herokuapp.com/codescrap" target=_blank> https://mcodechefp.herokuapp.com/codescrap</a></li>
+		  		    </ol>
+  				</div>
+			</div> 
+		</div>
+
+		
+		<br>
+		<div class="inpro">
+			<div>
+				<div  style="flex-grow: 1"><h1>Attendence Mangement </h1></div>
+					<br>
+		  			<div  style="flex-grow: 8">
+		  			<ol style="color:black;">
+		  			<li>
+		  			 Develop a website that read pdf genereated by chrome attendence extension and maintain the attendence 	  		   
+		  		   	</li>
+		  		    <li>
+		  			  Helpful for teacher to maintain student Attendence record 		   
+		  		   	</li>
+		  		   	
+		  		    <li><a href="https://github.com/" target=_blank> Link for project</a></li>
+		  		    </ol>
+  				</div>
+			</div> 
+		</div>
+
+		<br>
+		<div class="inpro">
+			<div>
+				<div  style="flex-grow: 1"><h1>Codsaver </h1></div>
+					<br>
+		  			<div  style="flex-grow: 8">
+		  			<ol style="color:black;">
+		  			<li>
+		  			 Develop a website to that is used to store coding problem with title ,topic, solution ,importance value and problem link	  		   
+		  		   	</li>
+		  		    <li>
+		  			  Helpful for student to store their practice problem so that they can again revise it  		   
+		  		   	</li>
+		  		   	
+		  		    <li><a href="http://codsaver.herokuapp.com/" target=_blank> http://codsaver.herokuapp.com/</a></li>
+		  		    </ol>
+  				</div>
+			</div> 
+		</div>
+        
+		<br>
+    <div class="inpro">
+			<div>
+				<div  style="flex-grow: 1"><h1>E V M </h1></div>
+					<br>
+		  			<div  style="flex-grow: 8">
+		  			<ol style="color:black;">
+		  			<li>
+		  			 Build a website that is like a voting machine.  	  		   
+		  		   	</li>
+		  		   
+		  		   	
+		  		    <li><a href="https://github.com/" target=_blank> Link for project</a></li>
+		  		    </ol>
+  				</div>
+			</div> 
+		</div>
+
+		
+		`
+
+	}
+
+	else if(val==='python'){
+		document.querySelector('#ml').style.backgroundColor = 'lightgrey';
+		document.querySelector('#web').style.backgroundColor = 'lightgrey';
+		document.querySelector('#python').style.backgroundColor = 'blue';
+		document.querySelector('#chrome').style.backgroundColor = 'lightgrey';
+		document.querySelector('#inproject').innerHTML=`
+		
+		
+		<br><div class="inpro">
+
+		<div>
+				<div  style="flex-grow: 1"><h1> To Do list cli application</h1></div>
+				<br>
+	  			<div  style="flex-grow: 8">
+	  			<ol style="color:black;">
+	  			<li>
+	  			 	Using Python make a to do list application that execute on commannd line interface  		   
+	  		   	</li>
+	  		    <li><a href="https://www.geeksforgeeks.org/how-to-make-a-todo-list-cli-application-using-python/" target=_blank> My article on gfg</a></li>
+	  		    </ol>
+  			</div>
+		</div> 
+		</div>`;
+
+	}
+	else{
+		document.querySelector('#ml').style.backgroundColor = 'lightgrey';
+		document.querySelector('#web').style.backgroundColor = 'lightgrey';
+		document.querySelector('#chrome').style.backgroundColor = 'blue';
+		document.querySelector('#python').style.backgroundColor = 'lightgrey';
+		document.querySelector('#inproject').innerHTML=`
+		<br><div class="inpro">
+        
+		<div class="flex-container">
+				<div  style="flex-grow: 1"><h4> Using JavaScript and chromeAPI</h4></div>
+	  			
+		</div> 
+		</div>
+
+
+		
+		<br><div class="inpro">
+
+		<div>
+				<div  style="flex-grow: 1"><h1> Google Meet Attendence Collector</h1></div>
+				<br>
+	  			<div  style="flex-grow: 8">
+	  			<ol style="color:black;">
+	  			<li>
+	  			 Developed a chrome extension that fetch Attendence from Google meet and generate a report in form of pdf	  		   
+	  		   	</li>
+	  		    
+	  		    <li><a href="#"> Link for project</a></li>
+	  		    </ol>
+  			</div>
+		</div> 
+		</div>
+
+		
+		
+		<br><div class="inpro">
+        
+		<div class="flex-container">
+				<div  style="flex-grow: 1"><h1> AddBlocker  Chrome Extension to block add </h1></div>
+	  			<div  style="flex-grow: 8">
+	  			<ol style="color:black;">
+	  			<li>
+	  			 Developed a chrome extension that block the advertisement that are available on webpages .	  		   
+	  		   	</li>
+	  		    
+	  		    <li><a href="#"> Link for project</a></li>
+	  		    </ol>
+  			</div>
+		</div> 
+		</div>
+
+		<br><div class="inpro">
+
+		<div>
+				<div  style="flex-grow: 1"><h1> Imagechanger Chrome Extension </h1></div>
+				<br>
+	  			<div  style="flex-grow: 8">
+	  			<ol style="color:black;">
+	  			<li>
+	  			 Developed a chrome extension that replace the all given images with random given images	  		   
+	  		   	</li>
+	  		    <li><a href="#"> Link for project</a></li>
+	  		    </ol>
+  			</div>
+		</div> 
+		</div>
+
+		<br><div class="inpro">
+
+		<div >
+				<div  style="flex-grow: 1"><h1> Magic Chrome Extension like Thanos </h1></div>
+				<br>
+	  			<div  style="flex-grow: 8">
+	  			<ol style="color:black;">
+	  			<li>
+	  			 Developed a chrome extension that delete the complete  webpage.	  		   
+	  		   	</li>
+	  		    <li><a href="#"> Link for project</a></li>
+	  		    </ol>
+  			</div>
+		</div> 
+		</div>
+		`
 
 	}
 

@@ -109,7 +109,7 @@ ul{
   text-align: center;
   list-style-position: inside;
 }
-li{
+ul li{
   font-size: 14pt;
   list-style: inside;
   font-weight: bold: 
@@ -118,4 +118,28 @@ li{
 img:hover{
 
   box-shadow: 2px 2px 20px 5px gold;
+}
+
+
+.projectbtn{
+   border-top-right-radius: 56%;
+    border-bottom-right-radius: 10%;
+    background: lightgrey;
+    border-bottom: double;
+    border-top-width: thick;
+    border-top-left-radius: 49%;
+}
+.inpro{
+    background: cornsilk;
+    max-width: 100%;
+    height: auto;
+}
+ol li{
+   font-size: 14pt;
+   word-spacing: 2px;
+   letter-spacing: 1px;
+}
+
+ol{
+  margin: 20px;
 }
