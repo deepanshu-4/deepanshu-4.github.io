@@ -15,11 +15,11 @@ function call(val){
 		document.querySelector("#tp").innerHTML=`<h3 style="color:darkorange;" >Deepanshu Kaushik S/O Raman Kumar </h3>
 		  	<h5>deepukaushik2001@gmail.com</h5>
 		  	<h5>8708099191</h5>
-		  	<a href="" >Github </h3>
-		  	<a href="">LinkedIn</a>
-		  	<a href="">Codechef</a>
-		  	<a href="">GeeksforGeeks</a>
-		  	<a href="">Leetcode</a>
+		  	<a href="https://github.com/deepanshu-4" target=_blank >Github </h3>
+		  	<a href="https://www.linkedin.com/in/deepanshu-kaushik-a479301b3/" target=_blank>LinkedIn</a>
+		  	<a href="https://www.codechef.com/users/dk20" target=_blank >Codechef</a>
+  	<a href="https://auth.geeksforgeeks.org/user/cse4/practice/" target=_blank >GeeksforGeeks</a>
+  	<a href="https://leetcode.com/dk4/" target=_blank >Leetcode</a>
 		  	`;
 		document.querySelector('#pro').style.display = 'none';
 		console.log("a");
@@ -198,7 +198,7 @@ function scall(val){
 	  		  
 	  		    	<li>Language used :- Python</li>
 	  		    	<li>Library used :-  Numpy,Scipy,Scikit-learn</li>
-	  		    	<li><a href="#">Link for project</a></li>
+	  		    	<li><a href="https://github.com/deepanshu-4/Loan-Prediction-Using-ML" target=_blank>Link for project</a></li>
 	  		    <ol>
   			</div>
 		</div> 
@@ -218,11 +218,11 @@ function scall(val){
 		  		   	</li>
 		  		   
 		  		   	
-		  		    <li><a href="#"> Link for project</a></li>
+		  		    <li><a href="https://github.com/deepanshu-4/Disease-Prediction" target=_blank> Link for project</a></li>
 		  		    </ol>
   				</div>
 			</div> 
-		</div>		`;
+		</div>`;
 
 
 	}
@@ -374,7 +374,52 @@ function scall(val){
 	  		    </ol>
   			</div>
 		</div> 
-		</div>`;
+		</div>
+		<br><div class="inpro">
+
+		<div>
+				<div  style="flex-grow: 1"><h1> File-Arranger-in-Python</h1></div>
+				<br>
+	  			<div  style="flex-grow: 8">
+	  			<ol style="color:black;">
+	  			<li>
+	  			 	Arrange different files in different folder like images,documents etc  		   
+	  		   	</li>
+	  		    <li><a href="https://github.com/deepanshu-4/File-Arranger-in-Python" target=_blank> Link </a></li>
+	  		    </ol>
+  			</div>
+		</div> 
+		</div>
+
+		<br><div class="inpro">
+
+		<div>
+				<div  style="flex-grow: 1"><h1>Python-Desktop-Applications</h1></div>
+				<br>
+	  			<div  style="flex-grow: 8">
+	  			<ol style="color:black;">
+	  			<li>
+	  			 	<strong>FaceDetector.py</strong><br>
+	  			 	<br>
+	  			 	Facedetector.py can be used to keep track who use your pc. When anyone start the PC  the application automatically click the photo of user and send image to gmail id of registered user.
+					<br><br><span style="color:orange;">How to Use</span><br><br>
+Add shortcut of facedetector.bat file in startup folder. (Type shell:startup in Window Run)
+In facedetector.py add your email address  		   
+	  		   	</li><br>
+	  		   	<li>
+	  		   	<strong>Siri.py</strong><br>
+A desktop voice assisant which can used to google search,youtube video playing etc
+	  		   	</li><br>
+	  		    <li><a href="https://github.com/deepanshu-4/Python-Desktop-Applications" target=_blank> Link </a></li>
+	  		    </ol>
+  			</div>
+		</div> 
+		</div>
+		`
+
+
+
+		;
 
 	}
 	else{
@@ -404,7 +449,7 @@ function scall(val){
 	  			 Developed a chrome extension that fetch Attendence from Google meet and generate a report in form of pdf	  		   
 	  		   	</li>
 	  		    
-	  		    <li><a href="#"> Link for project</a></li>
+	  		    <li><a href="https://github.com/deepanshu-4/Chrome-Extensions/tree/main/popupsgooglemmeet" target=_blank> Link for project</a></li>
 	  		    </ol>
   			</div>
 		</div> 
@@ -422,7 +467,7 @@ function scall(val){
 	  			 Developed a chrome extension that block the advertisement that are available on webpages .	  		   
 	  		   	</li>
 	  		    
-	  		    <li><a href="#"> Link for project</a></li>
+	  		    <li><a href="https://github.com/deepanshu-4/Chrome-Extensions/tree/main/adblocker" target=_blank > Link for project</a></li>
 	  		    </ol>
   			</div>
 		</div> 
@@ -438,7 +483,7 @@ function scall(val){
 	  			<li>
 	  			 Developed a chrome extension that replace the all given images with random given images	  		   
 	  		   	</li>
-	  		    <li><a href="#"> Link for project</a></li>
+	  		    <li><a href="https://github.com/deepanshu-4/Chrome-Extensions/tree/main/imageextension" target=_blank> Link for project</a></li>
 	  		    </ol>
   			</div>
 		</div> 
@@ -454,7 +499,7 @@ function scall(val){
 	  			<li>
 	  			 Developed a chrome extension that delete the complete  webpage.	  		   
 	  		   	</li>
-	  		    <li><a href="#"> Link for project</a></li>
+	  		    <li><a href="https://github.com/deepanshu-4/Chrome-Extensions/tree/main/magic" target=_blank> Link for project</a></li>
 	  		    </ol>
   			</div>
 		</div> 
