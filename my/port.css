@@ -4,9 +4,8 @@
 	box-sizing: border-box; 
 }
 body{
-	background: ghostwhite;
-	/*background: cadetblue;*/
-	/*background: azure;*/
+	background:  #282828;
+	
 }
 .flex-container {
   display: flex;
@@ -45,7 +44,8 @@ body{
  font-size: 10pt;
 }
 
-img{
+.img
+{
 	object-fit: cover;
 	border-radius: 100%
 }
@@ -65,7 +65,7 @@ button:hover{
 
 .edu
 {
-	font-size: 14pt;
+	font-size: 16pt;
 	background: beige;
 	height:50pt;
     line-height: 50pt;
@@ -80,23 +80,29 @@ table {
 }
 
 td, th {
-  border: 5pt solid #dddddd;
+  border: 2pt solid #dddddd;
   text-align: left;
-  padding: 5px;
-  font-weight: bold;
-  font-size: 14pt;
+  padding: 3px;
+  /*color: floralwhite;*/
+  /*font-weight: bold;*/
+  font-size: 15pt;
 }
 
-
+a{
+color: mediumvioletred;
+letter-spacing: 0.1rem;
+text-decoration-color: wheat;
+}
 
 .typewriter h3 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0em; /* Adjust as needed */
-  font-size:3vw;
+  /*font-size:2.5vw;*/
+  font-family: "Bradley Hand", cursive;
   animation: 
-    typing 6.5s steps(30, end);
+    typing 10.5s steps(30, end);
 }
 
 /* The typing effect */
@@ -115,19 +121,27 @@ ul li{
   font-weight: bold: 
 }
 
-img:hover{
+.img:hover{
 
   box-shadow: 2px 2px 20px 5px gold;
 }
 
 
 .projectbtn{
-   border-top-right-radius: 56%;
+  
+  border: 2px solid grey;
+  background-color: cornsilk;
+  text-align: center;
+  margin: auto;
+  margin-top: 2vw;
+  padding: auto;
+  max-width: 50%;
+  /* border-top-right-radius: 56%;
     border-bottom-right-radius: 10%;
     background: lightgrey;
     border-bottom: double;
     border-top-width: thick;
-    border-top-left-radius: 49%;
+    border-top-left-radius: 49%;*/
 }
 .inpro{
     background: cornsilk;
@@ -138,8 +152,52 @@ ol li{
    font-size: 14pt;
    word-spacing: 2px;
    letter-spacing: 1px;
+   line-height: 2rem;
 }
 
 ol{
   margin: 20px;
+}
+
+.card{
+  width: 100%;
+  border: 2px solid grey;
+  background-color: cornsilk;
+  text-align: center;
+  margin: auto;
+  margin-top: 2vw;
+  padding: auto;
+}
+
+.card h1{
+color: blue;
+font-family: "Bradley Hand";
+}
+
+.card h2{
+color:#585858 ;
+letter-spacing: 0.1px;
+}
+.container{
+display: flex;
+flex-wrap: wrap;
+}
+.card:hover{
+box-shadow: 6px 6px 3px 3px silver;
+}
+
+.card h2:hover{
+letter-spacing: 0.66px;}
+
+.inpro div h1{
+letter-spacing:0.2rem;color:blue; text-align:center;
+}
+.inpro div h3{
+letter-spacing:0.2rem;color:crimson;
+}
+
+li img{
+
+width:100%;margin-top:5%;
+
 }
