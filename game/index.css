@@ -1,0 +1,191 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+header{
+    text-align: center;
+}
+
+main{
+    background-color: black;
+    /* height: 95vh; */
+    display: flex;
+    align-items:center;
+  
+    gap:3%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:20px;
+}
+
+.card
+{
+    flex-basis: 15%;
+    max-width:280px;
+    max-height:150px;
+    background-color: darkcyan;
+    color:darkcyan;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 2px silver;
+    padding:50px;
+    margin-top:30px;
+    
+    /* box-shadow: 4px 3px 5px 1px silver; */
+}
+p{
+    font-size: 30pt;
+} 
+
+.card:hover{
+    box-shadow: 4px 3px 5px 1px silver;
+}
+
+.score1 input{
+    padding: 16px;
+    border-radius: 15px;
+    background-color: seagreen;
+    outline: none;
+    /* margin:15px; */
+    cursor: pointer;
+    color:white;
+    position: sticky;
+}
+/* span{
+    color:red;
+    font-size: 15pt;
+} */
+.score
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: bisque;
+    padding: 5px;
+}
+.score1
+{
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+    padding: 5px;
+}
+
+#label_a
+{
+    /* margin-left: 10px; */
+    font-size:1.5rem;
+}
+#label_b
+{
+    /* margin-right: 10px; */
+    font-size:1.5rem;
+}
+
+.second_page{
+    display: none;
+ 
+}
+.first_page h5,h1
+{
+ margin-bottom:15px;
+ 
+}
+/*************************Global CSS styles start*******************************/
+
+body {
+    /* overflow-y: hidden; */
+    font-size: 16px;
+    background-color:darkslategray;
+    /* background-image: url("https://media.tenor.com/exnzxw_A81gAAAAM/omfoo.gif"); */
+    color:burlywood;
+ 
+}
+
+/*************************Page CSS styles start*******************************/
+
+.product-detail-wrapper {
+    display: flex;
+    gap: 4%;
+    align-items: center;
+    padding: 20px;
+}
+.product-image-wrapper {
+    flex-basis: 50%;
+}
+.product-info-wrapper {
+    flex-basis: 50%;
+}
+.product-image {
+    max-height: 90vh;
+    border-radius: 10px;
+    width: 100%;
+    height: 500px;
+}
+.product-company {
+    opacity: 0.8;
+}
+.product-description {
+    font-size: 16px;
+}
+.product-prices-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.product-price {
+    color: grey;
+    margin-right: 10px;
+    font-size: 1em;
+}
+.product-quantity-cta {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 0 20px 0;
+    width: 50%;
+}
+.quantity-btn {
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 30px;
+    background-color: orange;
+    opacity: 0.9;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.quantity-input {
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 5px;
+    width: 50px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.1);
+    outline: none;
+    border: none;
+}
+#fp,#sp {
+    margin-bottom:8px;
+    padding: 5px;
+    width: 150px;
+    text-align: center;
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    opacity:0.8;
+}
+.add-to-cart-cta 
+{
+    width: 200px;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    background-color: orange;
+    cursor: pointer;
+    border-radius: 6px;
+}
